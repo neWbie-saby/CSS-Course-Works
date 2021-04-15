@@ -1,0 +1,110 @@
+.bg {
+    background: url('../plans-background.jpg') center/cover;
+    filter: grayscale(10%);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+.plan {
+    display: block;
+    border: #025702 solid 3px;
+    border-left: none;
+    background: #99da7f;
+    width: 80%;
+    margin: 0.9rem 0;
+    padding: 1.9rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.plan:hover, 
+.plan:active {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-color: #ec6868;
+}
+
+.plan a {
+    text-decoration: none;
+}
+
+.plan__badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    width: 12rem;
+    text-align: center;
+    font-size: 0.7rem;
+    color: wheat;
+    background: #ff5454;
+    padding: 0.6rem;
+    transform: rotate(45deg) translate(3.6rem, -1.5rem);
+    transform-origin: center;
+    /* transform-origin: left top; */
+    /* transform-origin: 25% 50%; */
+}
+
+.plan__header {
+    color: black;
+    font-size: 1.3rem;
+}
+
+.plan__header-2 {
+    color: #706e6e;
+    font-size: 1.25rem;
+}
+
+.plan__desc {
+    background: white;
+    border: #024908 solid 1.5px;
+    padding: 1rem;
+    color: black;
+    font-size: 1rem;
+}
+
+.plan-free {
+    background: #b9e2a8;
+    float: right;
+    border-right: none;
+    border-left: #025702 solid 3px;
+    text-align: right;
+}
+
+.clearfloats {
+    clear: both;
+}
+
+.plan-premium {
+    background: #024b02;
+}
+
+.plan-premium .plan__header {
+    color: white;
+}
+
+.plan-premium .plan__header-2 {
+    color: #a19e9e;
+}
+
+@media (min-width: 40rem) {
+    main {
+        margin: 3rem auto;
+        max-width: 61rem;
+    }
+}
+
+@media (min-width: 61rem) {
+    .plan {
+        border-left: #025702 solid 3px;
+    }
+
+    .plan-free {
+        border-right: #025702 solid 3px;
+    }
+}

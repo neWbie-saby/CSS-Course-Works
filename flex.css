@@ -1,0 +1,75 @@
+.flex-container {
+    border: 2px solid black;
+    padding: 5px;
+    height: 500px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* MAIN AXIS */
+    justify-content: flex-start;
+    /* CROSS AXIS */
+    align-items: center;
+    /* align-content: center; */
+}
+  
+.item-1 {
+    background-color: orange;
+    border: 3px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+.item-2 {
+    background-color: orange;
+    border: 3px solid black;
+    padding: 5px;
+    width: 250px;
+    margin: 5px;
+}
+
+.item-3 {
+    background-color: orange;
+    border: 3px solid black;
+    margin: 5px;
+    padding: 5px;
+    height: 250px;
+    /* align-self: flex-end; */
+}
+
+.item-4 {
+    background-color: orange;
+    border: 3px solid black;
+    margin: 5px;
+    padding: 5px;
+    width: 300px;
+    height: 300px;
+    /* order: 1; */
+}
+
+.item-5 {
+    background-color: orange;
+    border: 3px solid black;
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+    /* flex-basis: 20%; */
+    flex: 0 1 20%;
+}
+
+/* Flex-grow: 1+4 = 5 parts distributed in 1:4 way */
+
+.item-6 {
+    background-color: orange;
+    border: 3px solid black;
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+    /* order: -2; */
+    /* flex-grow: 4; */
+    flex-shrink: 0;
+}
